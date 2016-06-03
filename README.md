@@ -43,7 +43,7 @@
 		
 ## Modeling our Data
 
-	Post title:string content:string
+	Post title:string content:text
 	
 	Project title:string description:text link:string
 	
