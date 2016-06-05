@@ -1,7 +1,8 @@
 class ProjectsController < ApplicationController
-	before_action :find_project, only: [:show, :edit, :update, :detroy]
+	before_action :find_project, only: [:show, :edit, :update, :destroy]
+	
 	def index
-		@projects = Project.all.order("created_at DESC")
+		@projects = Project.all.order("created_at DESC").paginate(page: params[:page], per_page: 10)
 	end
 	
 	def new
@@ -14,7 +15,7 @@ class ProjectsController < ApplicationController
 		if @project.save
 			redirect_to @project, notice: "Nice Daniel! That project was sucessfully saved."
 		else
-			render 'new'
+			render 'new', notice: "Oh no, Daniel! I was unable to save your project."
 		end
 	end
 	
