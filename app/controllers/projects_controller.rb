@@ -14,9 +14,9 @@ class ProjectsController < ApplicationController
 		@project = Project.new project_params
 		
 		if @project.save
-			redirect_to @project, notice: "Nice Daniel! That project was sucessfully saved."
+			redirect_to @project, notice: "Ótimo Daniel! Sua galeria ou evento foi salva com sucesso."
 		else
-			render 'new', notice: "Oh no, Daniel! I was unable to save your project."
+			render 'new', notice: "Oh não, Daniel! Não foi possível salvar sua galeria ou evento."
 		end
 	end
 	
@@ -28,7 +28,7 @@ class ProjectsController < ApplicationController
 	
 	def update
 		if @project.update project_params
-			redirect_to @project, notice: "Huzzah! That project was successfully saved!"
+			redirect_to @project, notice: "Huzzah! Sua galeria ou evento foi salva com sucesso!"
 		else
 			render 'edit'
 		end
