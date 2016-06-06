@@ -1,6 +1,6 @@
 <%= form_for @project do |f| %>
 	<% if @project.errors.any? %>
-		<h2><%= pluralize(@project.errors.count, "error") %> prevented this project from saving:</h2>
+		<h2><%= pluralize(@project.errors.count, "erro") %> preveniram esta galeria ou evento de salvar:</h2>
 		<ul>
 			<% @project.errors.full_messages.each do |msg| %>
 				<li><%= msg %></li>

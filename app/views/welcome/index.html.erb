@@ -1,13 +1,14 @@
 <div class="wrapper wrapper_padding clearfix">
 	<div class="col-1 about homepage_content">
-		<h2>About</h2>
+		<h2>Sobre</h2>
 		<hr>
-		<p>I'm a designer &amp; developer living in Colorado Springs, Colorado.</p>
-		<p>By day I work as a front-end dev / designer at Precision Nutrition, by night I teach how to design &amp; code rails applications at <a href="#"> Unicasts</a>.</p>
-		<p>You can find me speaking in 140 characters on Twitter, swooshing some pixels on Dribbble, and sharing some code on Github.</p>	
+		<p>Recebi sem esperar, o maior presente que poderia um dia, vir a sonhar. Nasceu a pequena <a href="#">Sofia</a>, que veio ao mundo trazer muita alegria.</p>
+		<p>As responsabilidades serão imensas, com sua criação, educação e proteção. Uma flor tão delicada, cheia de grande frescor, merece crescer num ambiente de muito amor.</p>
+		<p>Como o tempo passa rápido, decidi criar este Blog para poder registrar, a vida de <a href="#">Sofia</a>, o seu nascimento, os fatos marcantes e as conquistas de cada dia.</p>	
+		<p>Não deixe de clicar e acompanhar, pois todos os dias, alguma novidade irá surgir, fazendo a distância diminuir, e nosso amor por ela aumentar. </p>
 	</div>
 	<div class="col-2 homepage_content">
-		<h2>Stuff I've Written</h2>
+		<h2>Diário de Bordo</h2>
 		<hr>
 		<% @posts.each do |post| %>
 			<h3><a href="#"><%= link_to post.title, post %></a></h3>
@@ -15,7 +16,7 @@
 		<% end %>	
 	</div>
 	<div class="col-3 homepage_content">
-		<h2>Stuff I've Built</h2>
+		<h2>Galerias e Eventos</h2>
 		<hr>
 		<% @projects.each do |project| %>
 			<h3><a href="#"><%= link_to project.title, project %></a></h3>
