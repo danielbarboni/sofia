@@ -4,6 +4,10 @@
 		<h1><%= @post.title %></h1>
 		<hr>
 	</header>
+	
+	<div id="image" class="image_wrapper">
+		<%= image_tag(@post.image.url(:medium)) %>				
+	</div>
 			
 	<div id="content">
 		<%= markdown @post.content %>				
