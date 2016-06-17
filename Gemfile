@@ -16,7 +16,7 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'will_paginate', '~> 3.1.0' 
 gem 'mail_form', '~> 1.5.1'
 gem 'devise', '~> 4.1.1'
-gem 'paperclip', '~> 4.3'
+gem 'paperclip', :git=> 'https://github.com/thoughtbot/paperclip', :ref => '523bd46c768226893f23889079a7aa9c73b57d68'
 gem 'bootstrap-sass', '~> 3.3'
 gem 'aws-sdk', '~> 2.3'
 
